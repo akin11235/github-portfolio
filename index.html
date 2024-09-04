@@ -1,246 +1,711 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <title>Dele Oladunmoye</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- METAS -->
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="description"
+      content="Personal Portfolio - Full Stack Developer"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="keywords" content="Coding, Backend, Frontend, Django, Python" />
+
+    <!-- FAVICON -->
+
+    <!-- RESET -->
+    <link rel="stylesheet" href="styles/reset.css" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- GGOGLE ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap"
+    />
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <script src="script/app.js" defer></script>
   </head>
-  <body class="is-preload">
-    <!-- Header -->
-    <section id="header">
-      <header>
-        <span class="image avatar"
-          ><img src="images/DSC_0207.jpg" alt=""
-        /></span>
-        <!-- <h1 id="logo"><a href="#">Dele Oladunmoye</a></h1> -->
-        <p>
-          Hi, I'm Dele, a software developer specialised in frontend and backend
-          development for complex scalable web apps.
-        </p>
-      </header>
-      <nav id="nav">
-        <ul>
-          <li><a href="#one" class="active">About</a></li>
-          <li><a href="#two">Here's all the stuff I do.</a></li>
-          <li><a href="#three">Some of my past projects</a></li>
-          <li><a href="#four">Contact</a></li>
-        </ul>
+
+  <body>
+    <!-- HEADER -->
+    <header id="mainHeader">
+      <button class="hamburger-menu">
+        <i class="fa fa-bars"></i>
+      </button>
+      <!-- MAIN NAV -->
+
+      <nav id="mainNav" class="top">
+        <div class="nav-left">
+          <!-- <p class="first-name"><a href="#container">Dele</a></p> -->
+          <ul>
+            <li class="first-name">
+              <a href="#"><span>DO</span></a>
+            </li>
+            <!-- <li><a href="#top" class="current">About</a></li> -->
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#footer">Contact me</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <div class="see-my-work-nav">
+            <!-- <button class="nav-right pill-box"> -->
+            <a href="#projects">See my work</a>
+            <!-- </button> -->
+          </div>
+
+          <button type="button" aria-label="toggle theme" class="theme-btn">
+            <i class="fa-solid fa-moon fa-flip-horizontal fa-2xl"></i>
+          </button>
+        </div>
+        <!-- <li class="pill-box"><a href="#">See my work</a></li> -->
       </nav>
-      <footer>
-        <ul class="icons">
-          <li>
-            <a
-              target="_blank"
-              href="https://github.com/akin11235"
-              class="icon brands fa-github"
-              ><span class="label">Github</span></a
-            >
-          </li>
+      <!-- End MAIN NAV -->
+    </header>
+    <!-- End HEADER -->
 
-          <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/dele-oladunmoye-418b0015/"
-              class="icon brands fa-linkedin-in"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-        </ul>
-      </footer>
-    </section>
+    <!-- MAIN CONTAINER -->
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Main -->
-      <div id="main">
-        <!-- One -->
-        <section id="one">
-          <div class="image main" data-position="center">
-            <img src="images/banner.jpg" alt="" />
-          </div>
-          <div class="container">
-            <header class="major">
-              <!-- <h2>About Me</h2> -->
-              <h2>Dele Oladunmoye</h2>
-              <p>
-                Full Stack Developer | Software Engineer
-                <!-- <a href="http://html5up.net">HTML5 UP</a>. -->
-              </p>
-            </header>
-            <p>
-              I have more than 2 years' experience building software for clients
-              all over the world. Below is a quick overview of my main technical
-              skill sets and technologies I use. Want to find out more about my
-              experience and projects? Check out my online resume and project
-              portfolio.
-            </p>
-          </div>
-        </section>
+    <main id="container">
+      <!-- Container Left -->
+      <section class="container-left">
+        <div id="container-left-image">&nbsp;</div>
 
-        <!-- Two -->
-        <section id="two">
-          <div class="container">
-            <h3>Things I Can Do</h3>
-            <p>
-              <!-- Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer lorem ipsum dolor sit amet. -->
-            </p>
-            <ul class="feature-icons">
-              <li class="icon solid fa-code">Python</li>
-              <li class="icon solid fa-cubes">Django</li>
-              <li class="icon solid fa-book">Angular</li>
-              <li class="icon solid fa-coffee">REST API</li>
-              <li class="icon solid fa-bolt">Postgres</li>
-              <li class="icon solid fa-users">AWS(S3)</li>
+        <!-- <h1 class="name"><span>Dele Oladunmoye </span></h1> -->
+        <h1 class="name"><span>Dele Oladunmoye </span></h1>
+        <h3>Software Developer</h3>
+
+        <div id="container-left-social">
+          <a
+            href="https://github.com/akin11235"
+            target="_blank"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github fa-2xl"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/dele-o-275355277"
+            target="_blank"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin fa-2xl"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- End Container Left -->
+
+      <!-- Container Right -->
+      <section class="container-right">
+        <!-- Introduction -->
+        <div class="passion">
+          <p>
+            Dele is a skilled .NET Software Developer with solid experience in
+            Angular development. He is committed to advancing his skills and
+            expanding his technical knowledge to enhance his contributions to
+            his team. Dele's hands-on experience with both .NET and Angular
+            enables him to take on complex projects and drive innovation. His
+            dedication to continuous learning and staying current with industry
+            trends makes him a valuable asset in any development environment.
+          </p>
+        </div>
+
+        <!-- Frameworks and Libraries -->
+        <div id="frameworks">
+          <h3>Languages</h3>
+          <div class="card framework-card">
+            <ul>
+              <li>Major: C#, Python, JavaScript, SQL, TypeScript</li>
+              <li>Minor: C++</li>
             </ul>
           </div>
-        </section>
 
-        <!-- Three -->
-        <section id="three">
-          <div class="container">
-            <h3>A Few Accomplishments</h3>
-            <p>
-              <!-- Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer. Integer eu ante ornare amet commetus. -->
-            </p>
-            <div class="features">
-              <article>
-                <a
-                  target="_blank"
-                  href="https://papaya-cactus-2ad5cc.netlify.app/newReleases"
-                  class="image"
-<<<<<<< HEAD
-                >
-                  <!-- <img src="images/pic01.jpg" alt=""/> -->
-                  <img src="https://picsum.photos/id/20/200/300" alt="" />
-                </a>
-=======
-                  ><img src="https://picsum.photos/id/55/300/200" alt=""
-                /></a>
->>>>>>> 6014b081bdc4d979878c5131bfcbe74a669a0bfc
-                <div class="inner">
-                  <h4>Music Web App</h4>
-                  <p>
-                    Create playlists, add/remove songs from playlist. Search &
-                    filter songs based on artist or title.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a
-                  target="_blank"
-                  href="https://wistful.azurewebsites.net/"
-                  class="image"
-                  ><img src="https://picsum.photos/id/20/300/200" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Blog Web App</h4>
-                  <p>
-                    Users can view posts and contact the admin via Contact Page.
-                    Admin can Add, Delete, Update posts
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a target="_blank" href="#" class="image"
-                  ><img src="https://picsum.photos/id/131/300/200" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Weather App</h4>
-                  <p>
-                    Search weather for any city using openweathermap API calls
-                    using native JavaScript.
-                  </p>
-                </div>
-              </article>
-            </div>
+          <h3>Frameworks &amp; Libraries:</h3>
+
+          <!-- C# -->
+          <div class="card framework-card">
+            <h3>C#/.Net:</h3>
+            <ul>
+              <li>C# language features and best practices</li>
+              <li>.NET Framework, .NET Core, .NET 6 and newer versions</li>
+              <li>Entity Framework Core (EF Core), Dapper, LINQ</li>
+              <li>NUnit, xUnit.net, Moq</li>
+              <li>.NET MAUI, Xamarin Forms, PRISM</li>
+              <li>ASP.NET Identity, OAuth 2.0, JWT (JSON Web Tokens)</li>
+            </ul>
           </div>
-        </section>
 
-        <!-- Four -->
-        <section id="four">
-          <div class="container">
-            <h3>Contact Me</h3>
-            <p>
-              <!-- Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer. Integer eu ante ornare amet commetus. -->
-            </p>
-            <form method="post" action="#">
-              <div class="row gtr-uniform">
-                <div class="col-6 col-12-xsmall">
-                  <input type="text" name="name" id="name" placeholder="Name" />
+          <!-- Python -->
+          <div class="card framework-card">
+            <h3>Python</h3>
+            <ul>
+              <li>Django Rest Framework, Flask, Django, NumPy, SciPy</li>
+              <li>Pytest, Unittest</li>
+            </ul>
+          </div>
+
+          <!-- FrontEnd -->
+          <div class="card framework-card">
+            <h3>Frontend:</h3>
+            <ul>
+              <li>JavaScript (ES6+), TypeScript</li>
+              <li>Angular, NgRx, Redux</li>
+              <li>Jest, Jasmine</li>
+              <li>HTML, CSS, Sass, SCSS, API Testing, Selenium</li>
+            </ul>
+          </div>
+          <!-- SQL / Databases -->
+
+          <div class="card framework-card">
+            <h3>Databases:</h3>
+            <ul>
+              <li>SQL: PostgreSQL, MS SQL Server, SQLite, Oracle</li>
+              <li>NoSQL: MongoDB, Redis</li>
+            </ul>
+          </div>
+
+          <!-- Containerization / Orchestration -->
+          <div class="card framework-card">
+            <h3>Containerization &amp; Orchestration</h3>
+            <ul>
+              <li>Docker, Kubernetes, Azure Kubernetes Service (AKS)</li>
+            </ul>
+          </div>
+
+          <!-- Cloud Platforms -->
+          <div class="card framework-card">
+            <h3>Cloud Platforms</h3>
+            <ul>
+              <li>AWS (e.g., EC2, Lambda)</li>
+              <li>
+                Microsoft Azure, Azure services (Service Fabric, Azure
+                Functions, Azure App Service, Azure SQL Database, Azure DevOps)
+              </li>
+            </ul>
+          </div>
+
+          <!-- Version Control -->
+          <div class="card framework-card">
+            <h3>Version Control</h3>
+            <ul>
+              <li>Git, GitHub, GitLab, , Azure DevOps</li>
+            </ul>
+          </div>
+
+          <!-- Monitoring & Logging: -->
+          <div class="card framework-card">
+            <h3>Monitoring &amp; Logging:</h3>
+            <ul>
+              <li>Grafana</li>
+              <li>Prometheus</li>
+              <li>Splunk</li>
+              <li>Application Insights</li>
+              <li>Azure Monitor</li>
+              <li>Serilog and Nlog</li>
+            </ul>
+          </div>
+
+          <!-- Message Brokers & Queues: -->
+
+          <div class="card framework-card">
+            <h3>Message Brokers &amp; Queues:</h3>
+            <ul>
+              <li>
+                RabbitMQ, Kafka, Azure Service Bus, Azure Event Grid, Azure
+                Event Hubs
+              </li>
+            </ul>
+          </div>
+
+          <!--Continuous Integration/Continuous Deployment (CI/CD):  -->
+          <div class="card framework-card">
+            <h3>Continuous Integration/Continuous Deployment (CI/CD):</h3>
+            <ul>
+              <li>Azure Pipelines</li>
+              <li>Jenkins with .NET plugins</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div id="experience">
+          <h3>Working Experience</h3>
+
+          <div class="card workplace-container">
+            <div class="workplace-list">
+              <ul>
+                <li class="workplace" data-target="businessSensor">
+                  Business Sensor ERP
+                </li>
+                <li class="workplace" data-target="raptorCoders">
+                  Raptor Coders
+                </li>
+              </ul>
+            </div>
+
+            <div class="work-details">
+              <!-- First Experience Card -->
+
+              <div id="businessSensor" class="work-content">
+                <div>
+                  <h3>.NET Developer | Business Sensor</h3>
                 </div>
-                <div class="col-6 col-12-xsmall">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div class="col-12">
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Message"
-                    rows="6"
-                  ></textarea>
-                </div>
-                <div class="col-12">
-                  <ul class="actions">
+                <div>
+                  <p>January 2024 - Present</p>
+                  <p><span>Domain:</span> CRM ERP</p>
+                  <p>
+                    Business Sensor ERP is a full service ERP offering products
+                    for hospiltality industry
+                  </p>
+                  <p>
+                    <span>Technology stack:</span> C#, TypeScript, TDD, .Net,
+                    MSSQL, Angular, NgRx, Redux, Web API, Jest, Cucumber,
+                    Jasmine, XUnit, API Testing, Redis, Splunk, Microsoft Azure
+                  </p>
+                  <p><span>Products:</span> Business Sensor ERP</p>
+                  <ul>
                     <li>
-                      <input
-                        type="submit"
-                        class="primary"
-                        value="Send Message"
-                      />
+                      Conducted maintenance of front-end components using HTML,
+                      CSS, JavaScript, and Angular, enhancing user experience
+                      and performance
                     </li>
-                    <li><input type="reset" value="Reset Form" /></li>
+                    <li>
+                      Built and optimized back-end services using Node.js and
+                      Python
+                    </li>
+                    <li>
+                      Implemented security measures and performed security
+                      assessments, ensuring compliance with industry standards
+                    </li>
+                    <li>
+                      Conducted code reviews and provided feedback to team
+                      members, fostering a culture of continuous improvement
+                    </li>
+                    <li>
+                      Collaborated with cross-functional teams to define,
+                      design, and deliver new features, enhancing product
+                      functionality
+                    </li>
                   </ul>
                 </div>
               </div>
-            </form>
+
+              <!-- Second Experience Card -->
+              <div id="raptorCoders" class="work-content active">
+                <div>
+                  <h3>Full Stack Developer | <span>Raptor Coders</span></h3>
+                </div>
+                <div>
+                  <p>October 2023 - Present</p>
+                  <p><span>Domain:</span> Educational platform</p>
+                  <p>
+                    Raptor Coders train students in Software Development in
+                    Python and Angular
+                  </p>
+                  <p>
+                    <span>Technology stack:</span> Python, Django Rest
+                    Framework, TypeScript, Angular, JavaScript JavaScript,
+                    RabbitMQ
+                  </p>
+                  <p><span>Products:</span> Raptor Coders Website</p>
+                  <ul>
+                    <li>
+                      Designed and developed RESTful APIs and web services to
+                      support front-end functionalities
+                    </li>
+                    <li>
+                      Managed and optimized databases (MySQL, MongoDB,
+                      PostgreSQL)
+                    </li>
+                    <li>
+                      Collaborated with product managers and data scientists to
+                      define project requirements
+                    </li>
+                    <li>
+                      Conducted penetration testing and utilized security tools
+                      to identify and mitigate vulnerabilities
+                    </li>
+                    <li>
+                      Automated build and deployment processes using CI/CD
+                      pipelines, reducing release times by 40%
+                    </li>
+                    <li>
+                      Developed raptor coders website using a microservices
+                      model with Django Rest Framework as the backend service
+                      and Angular as the Frontend
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
+        <!-- END Experience-->
 
-        <!-- Five -->
-      </div>
+        <!-- Certification -->
+        <div id="certification">
+          <h3>Certification</h3>
 
-      <!-- Footer -->
-      <section id="footer">
-        <div class="container">
-          <ul class="copyright">
-            <!-- <li>&copy; Untitled. All rights reserved.</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
-          </ul>
+          <!-- First Skill Card -->
+          <div class="card certification-card skill-card__logo">
+            <div class="certification-left">
+              <h4>Azure Developer Associate</h4>
+              <!-- <i aria-hidden="true" class="fab fa-github"></i> -->
+            </div>
+
+            <div class="certification-right">
+              <h4>September 2024</h4>
+            </div>
+          </div>
+        </div>
+        <!-- END Certification-->
+
+        <!-- Selected Works -->
+
+        <div id="projects">
+          <!-- PROJECTS RIGHT ALIGNED -->
+
+          <h3>Featured Projects</h3>
+          <!-- Project 1 right -->
+          <div class="card project-card">
+            <div class="project-card-title">
+              <h2>FoodNet</h2>
+              <div class="project-links">
+                <a href="https://github.com/akin11235/foodnet" target="_blank">
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <!-- <button>Live Demo</button> -->
+              </div>
+            </div>
+
+            <div class="project-card-images">
+              <div class="project-card-image-left">
+                <img src="images/FoodNet_1.png" alt="" />
+                <img src="images/FoodNet_2.png" alt="" />
+              </div>
+
+              <div class="project-card-image-right">
+                <img src="images/FoodNet_3.png" alt="" />
+                <img src="images/FoodNet_4.png" alt="" />
+                <img src="images/FoodNet_5.png" alt="" />
+              </div>
+            </div>
+            <div class="project-card-info">
+              <div class="project-card-intro">
+                <p>
+                  The Restaurant Management Web Application is a full-stack
+                  application designed to manage and interact with a
+                  restaurant's menu and orders. Using a C# backend with ASP.NET
+                  Core and an Angular frontend, the application provides a
+                  comprehensive platform for both customers and administrators.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 right MyBLOG-->
+
+          <div class="card project-card">
+            <div class="project-card-title">
+              <h2>Blog App</h2>
+              <div class="project-links">
+                <a
+                  href="https://github.com/akin11235/my_blog.git"
+                  target="_blank"
+                >
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card-images">
+              <div class="project-card-image-left">
+                <img src="images/myBlog_1.png" alt="" />
+                <img src="images/myBlog_2.png" alt="" />
+              </div>
+
+              <div class="project-card-image-right">
+                <img src="images/myBlog_3.png" alt="" />
+                <img src="images/myBlog_4.png" alt="" />
+                <img src="images/myBlog_4.png" alt="" />
+              </div>
+            </div>
+            <div class="project-card-info">
+              <div class="project-card-intro">
+                <p>
+                  The Blog Application is a web-based platform built using
+                  Django, a high-level Python web framework. This application
+                  enables users to create, view, edit, and delete blog posts. It
+                  offers a user-friendly interface for both regular users and
+                  administrators, leveraging Django's powerful ORM, views, and
+                  templates to manage and present blog content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 right -->
+
+          <div class="card project-card">
+            <div class="project-card-title">
+              <h2>Music Web App</h2>
+              <div class="project-links">
+                <a
+                  href="https://github.com/akin11235/spotify-app.git"
+                  target="_blank"
+                >
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://papaya-cactus-2ad5cc.netlify.app/newReleases"
+                  target="_blank"
+                  ><button>Live Demo</button></a
+                >
+              </div>
+            </div>
+
+            <div class="project-card-images">
+              <div class="project-card-image-left">
+                <img src="images/musicApp_1.jpg" alt="" />
+                <img src="images/musicApp_2.png" alt="" />
+              </div>
+
+              <div class="project-card-image-right">
+                <img src="images/musicApp_1.jpg" alt="" />
+                <img src="images/musicApp_3.png" alt="" />
+                <img src="images/musicApp_4.png" alt="" />
+              </div>
+            </div>
+            <div class="project-card-info">
+              <div class="project-card-intro">
+                <p>
+                  The Music Data Display Application is a web application built
+                  using Angular that interacts with the Spotify API to display
+                  music data. This application provides a user-friendly
+                  interface to search for music, view details about tracks,
+                  albums, and artists, and explore various music genres.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Projects -->
+        <div class="other-projects-card-title">
+          <h3>Other Projects</h3>
+        </div>
+        <div class="card other-projects-card">
+          <!-- First Project: Library Management System -->
+
+          <div class="other-project-detail">
+            <div class="other-project-detail-image">
+              <a
+                target="_blank"
+                href="https://github.com/akin11235/Library-Management-System.git"
+                class="image"
+                ><img src="https://picsum.photos/id/55/300/200" alt=""
+              /></a>
+            </div>
+            <div class="other-project-links">
+              <div class="other-projects-card-heading">
+                <h4>Library Management System</h4>
+              </div>
+              <p>
+                The Library Management System is a console-based application
+                using C++.
+              </p>
+              <!-- Pop-up Element -->
+              <div class="popup">
+                <p>Click to view the GitHub repository for this project.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Project: Blog Application -->
+
+          <div class="other-project-detail">
+            <div class="other-project-detail-image">
+              <a
+                target="_blank"
+                href="https://github.com/akin11235/Flask_Stock_Portfolio_App.git"
+                class="image"
+                ><img src="https://picsum.photos/id/20/300/200" alt=""
+              /></a>
+            </div>
+            <div class="other-project-links">
+              <div class="other-projects-card-heading">
+                <h4>Stock Market App</h4>
+              </div>
+
+              <p>
+                The Stock Market Tracking Application is a web application
+                developed using Angular that integrates with a financial API to
+                display stock market data.
+              </p>
+            </div>
+            <!-- Pop-up Element -->
+            <div class="popup">
+              <p>Click to view the GitHub repository for this project.</p>
+            </div>
+          </div>
+
+          <!-- Third Project: Restaurant Management System -->
+
+          <div class="other-project-detail">
+            <div class="other-project-detail-image">
+              <a
+                target="_blank"
+                href="https://github.com/akin11235/Restaurant-Management-System.git"
+                class="image"
+                ><img src="https://picsum.photos/id/131/300/200" alt=""
+              /></a>
+            </div>
+            <div class="other-project-links">
+              <div class="other-projects-card-heading">
+                <h4>Restaurant Management System</h4>
+              </div>
+
+              <p>
+                The Restaurant Management System is an interactive console-based
+                application designed for a restaurant, leveraging
+              </p>
+            </div>
+            <!-- Pop-up Element -->
+            <div class="popup">
+              <p>Click to view the GitHub repository for this project.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+
+        <div id="contactForm">
+          <h3>Contact</h3>
+          <div class="card form-card">
+            <div class="contact-form">
+              <form name="submit-to-google-sheet" action="POST">
+                <div class="input-control input-control-two">
+                  <input
+                    type="text"
+                    name="Name"
+                    id="name"
+                    required
+                    placeholder="Your Name"
+                  />
+                  <input
+                    type="email"
+                    name="Email"
+                    id=""
+                    required
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="input-control input-control-two">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    required
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="input-control input-control-two">
+                  <textarea
+                    name="Message"
+                    id=""
+                    cols="15"
+                    rows="8"
+                    required
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <div class="input-control">
+                  <button type="submit" class="submit-btn">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+      <!-- End Selected Works -->
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- <h3>Contact</h3> -->
+
+      <div class="left-footer">
+        <div class="footer-image">&nbsp;</div>
+        <div class="footer-name">
+          <h3>Dele Oladunmoye</h3>
+          <h4>Software Developer</h4>
+          <div id="footer-social">
+            <a
+              href="https://github.com/akin11235"
+              target="_blank"
+              aria-label="github"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/dele-o-275355277"
+              target="_blank"
+              aria-label="linkedin"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-about">
+        <a href="#">About Me</a>
+        <!-- <a href="#projects">What I do</a> -->
+        <a href="#certification">Certification</a>
+        <a href="#projects">Projects</a>
+      </div>
+
+      <div class="footer-button">
+        <div class="contact-me-and-projects">
+          <div class="contact-me">
+            <a href="#">About me</a>
+          </div>
+
+          <div class="contact-me">
+            <a href="#projects">My Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const scriptURL =
+          "https://script.google.com/macros/s/AKfycbzC61aewCCFM8hosinwXktTamfiZfFsGzg-AjrAxvR7sYFeR3teYmeYcc-CyTrn5B77/exec";
+        const form = document.forms["submit-to-google-sheet"];
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) => console.log("Success!", response))
+            .catch((error) => console.error("Error!", error.message));
+        });
+      </script>
+    </footer>
   </body>
 </html>
