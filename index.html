@@ -597,110 +597,6 @@
 
         <!-- CONTACT FORM -->
 
-        <!-- <div id="contactForm">
-          <h3>Contact</h3>
-          <div class="card form-card">
-            <div class="contact-form">
-              <form
-                name="submit-to-google-sheet"
-                action="https://script.google.com/macros/s/AKfycbyIVAuioC1Oq4tIqkV1zHawppQEDT0wvGrUI-XMz-XdDcE4dCnnsKmsWiMbX_FTC_cn/exec"
-                method="POST"
-              >
-                <div class="input-control input-control-two">
-                  <input
-                    type="text"
-                    name="Name"
-                    id="name"
-                    required
-                    placeholder="Your Name"
-                  />
-                  <input
-                    type="email"
-                    name="Email"
-                    id="email"
-                    required
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="input-control input-control-two">
-                  <input
-                    type="text"
-                    name="Subject"
-                    id="subject"
-                    required
-                    placeholder="Subject"
-                  />
-                </div>
-                <div class="input-control input-control-two">
-                  <textarea
-                    name="Message"
-                    id="message"
-                    cols="15"
-                    rows="8"
-                    required
-                    placeholder="Your Message"
-                  ></textarea>
-                </div>
-                <div class="input-control">
-                  <button type="submit" class="submit-btn">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div id="contactForm">
-          <h3>Contact</h3>
-          <div class="card form-card">
-            <div class="contact-form">
-              <form
-                name="submit-to-server"
-                action="http://localhost:3000/submit-form"
-                method="POST"
-              >
-                <div class="input-control input-control-two">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    required
-                    placeholder="Your Name"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    required
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="input-control input-control-two">
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    required
-                    placeholder="Subject"
-                  />
-                </div>
-                <div class="input-control input-control-two">
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="15"
-                    rows="8"
-                    required
-                    placeholder="Your Message"
-                  ></textarea>
-                </div>
-                <div class="input-control">
-                  <button type="submit" class="submit-btn">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div> -->
-
         <div id="contactForm">
           <h3>Contact</h3>
           <div class="card form-card">
@@ -818,19 +714,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <script>
-        const scriptURL =
-          "https://script.google.com/macros/s/AKfycbzC61aewCCFM8hosinwXktTamfiZfFsGzg-AjrAxvR7sYFeR3teYmeYcc-CyTrn5B77/exec";
-        const form = document.forms["submit-to-google-sheet"];
-
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          fetch(scriptURL, { method: "POST", body: new FormData(form) })
-            .then((response) => console.log("Success!", response))
-            .catch((error) => console.error("Error!", error.message));
-        });
-      </script> -->
     </footer>
   </body>
 </html>
