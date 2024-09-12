@@ -105,34 +105,48 @@ document
     document.querySelector("#mainHeader").classList.toggle("active");
   });
 
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   const hamburgerMenu = document.querySelector(".hamburger-menu");
-  //   const mainNav = document.getElementById("mainNav");
-  //   const menuItems = mainNav.querySelectorAll("a");
+// Script to handle form submission
 
-  //   // Toggle the menu
-  //   hamburgerMenu.addEventListener("click", function () {
-  //     mainNav.classList.toggle("active");
-  //   });
+// // URL for the Google Apps Script web app
+// const scriptURL =
+//   "https://script.google.com/macros/s/AKfycbxQ0VZJXeLFjbVkNqdf00wQ_nD72COkhJoizcnMGBnxmo57AyEKt61oEW1oIod387E8/exec";
 
-  //   // Collapse the menu after clicking a menu item
-  //   menuItems.forEach((item) => {
-  //     item.addEventListener("click", function () {
-  //       mainNav.classList.remove("active");
-  //     });
-  //   });
-  // });
-// document
-//   .querySelectorAll("#mainNav .nav-left a, #mainNav .nav-right a")
-//   .forEach((link) => {
-//     link.addEventListener("click", () => {
-//       document.getElementById("mainHeader").classList.add("collapsed");
+// // Get the form element by its name attribute
+// const form = document.forms["submit-to-google-sheet"];
+
+// // Add an event listener for form submission
+// form.addEventListener("submit", (e) => {
+//   // Prevent the default form submission action
+//   e.preventDefault();
+
+//   // Create a FormData object from the form element
+//   const formData = new FormData(form);
+
+//   // Send a POST request to the Google Apps Script URL
+//   fetch(scriptURL, {
+//     method: "POST",
+//     body: formData,
+//     // mode: "no-cors", // Change from "no-cors" to "cors" for better handling of responses
+//   })
+//     .then((response) => {
+//       // Check if the response is OK (status code 200-299)
+//       if (response.ok) {
+//         return response.text(); // Convert response to text
+//       } else {
+//         throw new Error("Network response was not ok."); // Throw error if response is not OK
+//       }
+//     })
+//     .then((result) => {
+//       // Log success message and show an alert to the user
+//       console.log("Success!", result);
+//       alert("Form submitted successfully!");
+
+//       // Optionally, clear the form fields after successful submission
+//       form.reset();
+//     })
+//     .catch((error) => {
+//       // Log error message and show an alert to the user
+//       console.error("Error!", error.message);
+//       alert("There was an error submitting the form. Please try again.");
 //     });
-//   });
-
-// // Optional: Handle hamburger menu toggle
-// document.querySelector(".hamburger-menu").addEventListener("click", () => {
-//   const mainHeader = document.getElementById("mainHeader");
-//   mainHeader.classList.toggle("active");
-//   mainHeader.classList.remove("collapsed"); // Ensure menu is visible when toggling
 // });
