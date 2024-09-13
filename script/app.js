@@ -15,6 +15,7 @@ if (localStorage.getItem("theme") === "dark") {
   document.body.classList.remove("dark-mode");
   icon.classList.replace("fa-sun", "fa-moon");
 }
+
 // Add a click event listener to the theme button
 themeBtn.addEventListener("click", () => {
   // Toggle the 'dark-mode' class on the body element to switch themes
@@ -68,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // JavaScript for toggling work experience details
-
 document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll(".workplace");
   const contents = document.querySelectorAll(".work-content");
@@ -104,3 +104,16 @@ document
   .addEventListener("click", function () {
     document.querySelector("#mainHeader").classList.toggle("active");
   });
+
+// Collapse the navigation menu after a link is clicked
+document.querySelectorAll("#mainHeader a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    document.querySelector("#mainHeader").classList.remove("active");
+  });
+});
+
+// Add functionality to collapse menu when the night/day toggle is activated
+document.querySelector(".theme-btn").addEventListener("click", function () {
+  document.querySelector("#mainHeader").classList.remove("active");
+  // Your existing code for night/day toggle goes here
+});

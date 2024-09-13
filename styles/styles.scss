@@ -26,6 +26,10 @@ body {
   --color-card-border: #eceef0; // card-border
   --color-bg-alt: #fafdff; // cards background
 
+  --color-bg-nav-bar: #ffffff; // cards background
+
+  --color-bg-project-card: #d4d6e0;
+
   --color-text-dark: #444444; // font color
   --color-text-light: #fafdff; // font color
   --color-border: #b2becd; // Border
@@ -61,17 +65,20 @@ body {
   --color-primary: #191d2b;
   --color-primary: #18191a;
   --color-primary: #111821;
-  --color-white: #fafdff;
+  // --color-white: #fafdff;
+  --color-bullet-color: #607ee2; // Bullet color
   --color-bullet-color: #f69993; // Bullet color
-  --color-bullet-color: #961d15; // Bullet color
-  --color-bullet-color: #15965a; // Bullet color
-  --color-bullet-color: #64ffda; // Bullet color
+  // --color-bullet-color: #961d15; // Bullet color
+  // --color-bullet-color: #15965a; // Bullet color
+  // --color-bullet-color: #64ffda; // Bullet color
   // --color-grey-0: #eceef0; // font
   --color-text-dark: #d1d1d1; // font
   --color-border: #b2becd; // Border
   // --color-beige-3: #fafdff; // cards background
   --color-bg-alt: #3f3f3f; // cards background
   --color-bg-alt: #303846; // cards background
+
+  --color-bg-nav-bar: #303846; // cards background
   // --color-bg-alt: #FFFFFFB3; // cards background
   --color-white: #3f3f3f; // background for cards
   --color-white: #303846; // background for cards
@@ -80,6 +87,8 @@ body {
   --color-card-border: #2f2f2f; // card-border
   --color-card-border: #151e29; // card-border
   --color-heading: #fafdff; // project-card h2
+
+  --color-bg-project-card: #272744;
 
   // highlight at Experience
   --color-cursor-highlight: #7c7a7a; // Highlight background color for active item
@@ -147,7 +156,7 @@ a {
     width: 100%; // Full width of the header
     background-color: var(--color-primary); // Background color
     // font-size: 20rem;
-
+    // transition: max-height 0.5s ease, opacity 1.5s ease; /* Smooth transitions */
     .nav-left {
       margin-left: 150px;
       display: flex;
@@ -756,24 +765,33 @@ a {
           display: flex;
           flex-direction: row; // Align images horizontally
           overflow: hidden; // Hide overflow if images are larger than container
-          border-radius: 15px;
-          height: 400px;
-          gap: 20px;
+          border-radius: 5px;
+          // height: 400px;
+          // gap: 30px;
+
+          background-color: var(--color-bg-project-card);
+          // background-color: var(--color-bg-alt);
+          padding: 10px;
+          // gap: 20px; /* Space between the two image containers */
 
           .project-card-image-left,
           .project-card-image-right {
             flex: 1; // Default flex property
+            display: flex; /* Use flex to align images vertically */
+            flex-direction: column; /* Stack images vertically */
+            gap: 5px; /* Space between images */
           }
           .project-card-image-left {
             flex: 2; // 2/3 of the space
-            padding: 15px;
-            background-color: rgb(168, 168, 201);
+            padding: 5px;
+            // background-color: rgba(199, 199, 247, 0.26);
 
             img {
               object-fit: cover; // Ensure image covers the container
               width: 100%; // Full width of the container
               height: auto; // Maintain aspect ratio
-              margin-bottom: 10px; // Add a gap between the images
+              height: 200px; /* Fixed height for consistency */
+              margin-bottom: 5px; // Add a gap between the images
               &:last-child {
                 margin-bottom: 0; // Remove margin for the last image to avoid extra space
               }
@@ -782,10 +800,13 @@ a {
 
           .project-card-image-right {
             flex: 1; // 1/3 of the space
+            padding: 5px;
             img {
               object-fit: cover; // Ensure image covers the container
               width: 100%; // Full width of the container
               height: auto; // Maintain aspect ratio
+              height: 200px; /* Fixed height for consistency */
+              margin-bottom: 5px;
             }
             ul {
               display: flex;
@@ -812,7 +833,7 @@ a {
             align-items: center; // Centers content vertically
             gap: 20px; // Adds gap between elements
             background-color: #f0f0f0; // Highlight background color for active item
-            border-radius: 8px; // Rounded corners for hover and active states
+            border-radius: 5px; // Rounded corners for hover and active states
 
             p {
               // margin: 3% 0%;
@@ -826,12 +847,12 @@ a {
 
         // Target 2nd .project-card and its .project-card-image-left child
         &:nth-of-type(2) .project-card-image-left {
-          background-color: rgb(41, 41, 121); // Change to your desired color
+          // background-color: rgb(41, 41, 121); // Change to your desired color
         }
 
         // Target 3rd .project-card and its .project-card-image-left child
         &:nth-of-type(3) .project-card-image-left {
-          background-color: rgb(102, 66, 8); // Change to your desired color
+          // background-color: rgb(102, 66, 8); // Change to your desired color
         }
       }
       li {
@@ -842,7 +863,7 @@ a {
     .other-projects-card-title {
       h3 {
         font-size: 1.8rem;
-        padding-bottom: 35px;
+        padding-bottom: 20px;
         font-weight: 600;
         text-align: left;
         margin-top: 30px;
@@ -1233,7 +1254,7 @@ a {
 // Independent Components
 
 .card {
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 15px 20px 10px 20px;
   margin-bottom: 20px;
   // color: var(--color-grey-4);
@@ -1257,6 +1278,7 @@ a {
     overflow: -moz-scrollbars-none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
     scrollbar-width: none; /* For Firefox */
+    scroll-behavior: smooth;
     // max-width: 300px;
   }
 
@@ -1266,6 +1288,8 @@ a {
   }
 
   #mainHeader {
+    background-color: var(--color-bg-nav-bar);
+
     .hamburger-menu {
       display: block; // Show hamburger menu
       cursor: pointer;
@@ -1279,6 +1303,7 @@ a {
       text-align: left;
       justify-content: flex-start;
       margin-top: 50px; // Space below the header
+      background-color: var(--color-bg-nav-bar);
 
       .nav-left {
         width: 100%;
@@ -1305,6 +1330,9 @@ a {
       .nav-right {
         width: 100%;
         margin: 0 0 0 17px; // Space between top and left menu items
+        display: flex;
+        flex-direction: column;
+        gap: 0;
 
         .see-my-work-nav {
           border: none;
@@ -1344,10 +1372,13 @@ a {
         .theme-btn {
           width: 100%;
           text-align: left;
-          display: none;
+          // background-color: var(--color-bg-alt);
+          // background-color: var(--color-bg-alt);
+          background-color: var(--color-bg-nav-bar);
+          // display: none;
           i {
-            margin-left: 20px;
-            margin-bottom: 20px;
+            // margin-left: 20px;
+            margin-bottom: 30px;
           }
         }
       }
@@ -1355,6 +1386,7 @@ a {
 
     &.active #mainNav {
       display: flex; // Show the menu when active
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Add subtle shadow
     }
 
     &.collapsed #mainNav {
@@ -1402,6 +1434,10 @@ a {
       }
       .project-card-images {
         height: auto; // Auto height for images
+
+        .project-card-image-right {
+          display: none;
+        }
       }
       .project-card-info {
         .project-card-intro {
@@ -1460,6 +1496,10 @@ a {
         }
       }
     }
+
+    #contactForm {
+      scroll-margin-top: 80px;
+    }
   }
 
   #footer {
@@ -1485,6 +1525,10 @@ a {
     }
     .contact-me-and-projects {
       flex-direction: column;
+    }
+    .footer-social {
+      padding-top: 10px;
+      justify-content: center;
     }
   }
 
